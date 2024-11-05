@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoey Cloud Kitchen</title> <!-- Title updated here -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f1e8af;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1c62ad77;
+            color: white;
+            padding: 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Centering the content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            margin-right: 0.5em;
+        }
+        .header-text {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center; /* Center the text */
+        }
+        .offers {
+            background-color: #ffc10793;
+            color: #e92910;
+            text-align: center;
+            padding: 0.5em 0;
+            font-size: 1.2em;
+            font-weight: bold;
+            animation: move 10s linear infinite;
+        }
+        @keyframes move {
+            0% {transform: translateX(100%);}
+            100% {transform: translateX(-100%);}
+        }
+        nav {
+            background-color: #343a40;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #ffc107;
+            font-weight: bold;
+        }
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2em;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .info {
+            position: relative;
+            width: 100%;
+            margin-bottom: 2em;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: left;
+        }
+        .info img {
+            width: 100%;
+            height: 200px; /* Fixed height for all images */
+            object-fit: cover; /* Ensures images cover the area while maintaining aspect ratio */
+            display: block;
+        }
+        .info h2 {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #ffc107; /* Yellow color for headings */
+            font-size: 1.8em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        @media (min-width: 768px) {
+            .info {
+                width: 48%; /* Two columns on larger screens */
+            }
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav a {
+                display: block;
+                margin: 0.5em 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Cloud_Kitchen_Logo.png" alt="Logo" class="logo">
+        <div class="header-text">Zoey Cloud Kitchen</div> <!-- Title updated here -->
+    </header>
+    <div class="offers">
+        Special Offers: 20% off on your first order! Use code FIRST20.
+    </div>
+    <nav>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Menu</a>
+        <a href="#">Order Now</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <section>
+        <div class="info">
+            <img src="OIP.jpg" alt="About Us">
+            <h2>About Us</h2>
+        </div>
+        <div class="info">
+            <img src="image-1586948062.jpeg" alt="Our Services">
+            <h2>Our Services</h2>
+        </div>
+        <div class="info">
+            <img src="fgh.jpg" alt="Menu">
+            <h2>Menu</h2>
+        </div>
+        <div class="info">
+            <img src="df.jpg" alt="Order Now">
+            <h2>Order Now</h2>
+        </div>
+        <div class="info">
+            <img src="WhatsApp-vs-Viber.webp" alt="Contact Us">
+            <h2>Contact Us</h2>
+        </div>
+    </section>
+</body>
+</html>

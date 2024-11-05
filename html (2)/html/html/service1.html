@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            padding: 30px;
+            color: gold;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: gold;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        nav a {
+            color: gold;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFC107;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            color: black;
+            position: relative;
+            text-align: center; /* Centering text */
+        }
+        .birthday-section {
+            background: linear-gradient(to bottom right, #f5f5dc, #e0e0d5);
+            border: 2px solid #DAA520;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .wedding-section {
+            background: linear-gradient(to bottom right, #fff0f6, #fcd6e3);
+            border: 2px solid #DAA520;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin: 0;
+            position: relative;
+        }
+        h2:after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 4px;
+            background-color: #DAA520;
+            margin: 10px auto 0;
+            border-radius: 5px;
+        }
+        h3 {
+            margin: 20px 0 10px;
+            font-size: 2em;
+        }
+        p {
+            font-style: italic;
+            font-size: 1.5em;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 0;
+            margin: 0;
+            display: inline-block;
+            text-align: center; /* Centering list items */
+        }
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        blockquote {
+            font-size: 1.5em;
+            margin: 20px;
+            border-left: 5px solid #DAA520;
+            padding-left: 15px;
+            color: #343a40;
+            font-style: italic;
+            text-align: center; /* Centering blockquotes */
+        }
+        button {
+            background-color: #28A745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            display: block; /* Center button */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        /* Package Colors */
+        .package {
+            background-color: #f8f8f8;
+            border: 2px solid #DAA520;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .package:hover {
+            transform: scale(1.02);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #000;
+            color: gold;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Event Management</h1>
+        <p>Creating Unforgettable Moments</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#birthday">Birthday Packages</a></li>
+            <li><a href="#wedding">Wedding Packages</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="birthday-section" id="birthday">
+            <h2>Birthday Party Packages</h2>
+            <button onclick="window.location.href='#wedding'">View Wedding Packages</button>
+
+            <div class="package">
+                <h3>Basic Package</h3>
+                <p>Affordable options to start your journey.</p>
+                <img src="budget.jpg" alt="Basic Package">
+                <ul>
+                    <li>Celebrate with a fun and affordable birthday party.</li>
+                    <li>Enjoy basic decorations and simple snacks for a delightful experience.</li>
+                    <li>Perfect for those looking to create memories without overspending.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h3>Standard Package</h3>
+                <p>Everything you need for a beautiful celebration.</p>
+                <img src="normal.jpg" alt="Standard Package">
+                <ul>
+                    <li>The standard package offers a balanced celebration for all ages.</li>
+                    <li>Experience colorful decorations and a varied menu of treats.</li>
+                    <li>Ideal for those who want a lively party at a reasonable price.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h3>Premium Package</h3>
+                <p>A luxurious experience for your special day.</p>
+                <img src="premium.jpg" alt="Premium Package">
+                <ul>
+                    <li>Indulge in a premium birthday party with personalized touches.</li>
+                    <li>Enjoy themed decorations and gourmet catering for a special day.</li>
+                    <li>Perfect for those wanting an elevated and memorable celebration.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h3>Luxury Package</h3>
+                <p>An extravagant celebration tailored just for you.</p>
+                <img src="luxury.jpg" alt="Luxury Package">
+                <ul>
+                    <li>Experience the ultimate luxury birthday celebration with top-tier services.</li>
+                    <li>From exclusive venues to fine dining, every detail is crafted for perfection.</li>
+                    <li>Designed for those who want an extravagant and unforgettable party.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="wedding-section" id="wedding">
+            <h2>Wedding Packages</h2>
+            <button onclick="window.location.href='#birthday'">View Birthday Packages</button>
+
+            <div class="package">
+                <h3>Basic Package</h3>
+                <p>Affordable options to start your journey.</p>
+                <img src="budget2.jpg" alt="Basic Wedding Package">
+                <ul>
+                    <li>Enjoy an affordable wedding with essential services.</li>
+                    <li>Basic decorations and simple catering create a charming atmosphere.</li>
+                    <li>Perfect for couples looking to celebrate without breaking the bank.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h3>Standard Package</h3>
+                <p>Everything you need for a beautiful wedding.</p>
+                <img src="normal2.jpg" alt="Standard Wedding Package">
+                <ul>
+                    <li>The standard package offers a well-rounded experience for your special day.</li>
+                    <li>Elegant decorations and a varied menu ensure a memorable celebration.</li>
+                    <li>Ideal for couples who want a beautiful wedding at a reasonable price.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h3>Premium Package</h3>
+                <p>A luxurious experience for your special day.</p>
+                <img src="premium2.jpg" alt="Premium Wedding Package">
+                <ul>
+                    <li>Indulge in a premium wedding experience with custom services.</li>
+                    <li>Enjoy luxurious decorations and gourmet catering tailored to your taste.</li>
+                    <li>Perfect for couples seeking a sophisticated and elegant celebration.</li>
+                </ul>
+            </div>
+
+            <div class="package">
+                <h3>Luxury Package</h3>
+                <p>An extravagant celebration tailored just for you.</p>
+                <img src="luxury2.jpg" alt="Luxury Wedding Package">
+                <ul>
+                    <li>Experience the ultimate luxury wedding with exclusive services.</li>
+                    <li>From a stunning venue to gourmet dining, every detail is meticulously planned.</li>
+                    <li>Designed for couples who want an extravagant and unforgettable celebration.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h2 style="color: #343a40;">What Our Clients Say</h2>
+            <blockquote>"The event was perfect! Everything was taken care of beautifully."</blockquote>
+            <blockquote>"They made our special day unforgettable. Highly recommend!"</blockquote>
+            <blockquote>"Amazing service from start to finish!"</blockquote>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Event Management. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

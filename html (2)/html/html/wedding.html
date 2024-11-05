@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Event Management</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #343a40;
+            padding: 30px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            text-align: center;
+            background-color: #007BFF;
+            padding: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFC107;
+        }
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        p {
+            font-style: italic;
+            font-size: 1.7em;
+        }
+        img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 0;
+            margin: 0;
+            display: inline-block;
+            text-align: left;
+        }
+        li {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        blockquote {
+            font-size: 1.5em;
+            margin: 20px;
+            border-left: 5px solid #007BFF;
+            padding-left: 15px;
+            color: #343a40;
+            font-style: italic;
+        }
+        button {
+            background-color: #28A745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Wedding Event Management</h1>
+        <p>Creating Unforgettable Moments</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#basic">Basic Package</a></li>
+            <li><a href="#standard">Standard Package</a></li>
+            <li><a href="#premium">Premium Package</a></li>
+            <li><a href="#luxury">Luxury Package</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="basic" style="border: 2px solid #007BFF; background-color: #e9f7ff;">
+            <h2 style="color: #007BFF;">Basic Package</h2>
+            <p>Affordable options to start your journey.</p>
+            <img src="budget2.jpg" alt="Basic Wedding Package">
+            <ul>
+                <li>Enjoy an affordable wedding with essential services.</li>
+                <li>Basic decorations and simple catering create a charming atmosphere.</li>
+                <li>Perfect for couples looking to celebrate without breaking the bank.</li>
+            </ul>
+        </section>
+
+        <section id="standard" style="border: 2px solid #28A745; background-color: #e9ffed;">
+            <h2 style="color: #28A745;">Standard Package</h2>
+            <p>Everything you need for a beautiful wedding.</p>
+            <img src="normal2.jpg" alt="Standard Wedding Package">
+            <ul>
+                <li>The standard package offers a well-rounded experience for your special day.</li>
+                <li>Elegant decorations and a varied menu ensure a memorable celebration.</li>
+                <li>Ideal for couples who want a beautiful wedding at a reasonable price.</li>
+            </ul>
+        </section>
+
+        <section id="premium" style="border: 2px solid #FFC107; background-color: #fff3cd;">
+            <h2 style="color: #FFC107;">Premium Package</h2>
+            <p>A luxurious experience for your special day.</p>
+            <img src="premium2.jpg" alt="Premium Wedding Package">
+            <ul>
+                <li>Indulge in a premium wedding experience with custom services.</li>
+                <li>Enjoy luxurious decorations and gourmet catering tailored to your taste.</li>
+                <li>Perfect for couples seeking a sophisticated and elegant celebration.</li>
+            </ul>
+        </section>
+
+        <section id="luxury" style="border: 2px solid #DC3545; background-color: #f8d7da;">
+            <h2 style="color: #DC3545;">Luxury Package</h2>
+            <p>An extravagant celebration tailored just for you.</p>
+            <img src="luxury2.jpg" alt="Luxury Wedding Package">
+            <ul>
+                <li>Experience the ultimate luxury wedding with exclusive services.</li>
+                <li>From a stunning venue to gourmet dining, every detail is meticulously planned.</li>
+                <li>Designed for couples who want an extravagant and unforgettable celebration.</li>
+            </ul>
+        </section>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h2 style="color: #343a40;">What Our Clients Say</h2>
+            <blockquote>"The wedding was perfect! Everything was taken care of beautifully."</blockquote>
+            <blockquote>"They made our special day unforgettable. Highly recommend!"</blockquote>
+            <blockquote>"Amazing service from start to finish!"</blockquote>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zoey Event Management. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
